@@ -162,7 +162,6 @@ def insert_tweet(connection,tweet):
             'statuses_count':tweet['user']['statuses_count'],
             'withheld_in_countries':tweet['user'].get('withheld_in_countries',None),
             })
-        trans.commit()
 
         ########################################
         # insert into the tweets table
